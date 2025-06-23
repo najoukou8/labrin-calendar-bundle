@@ -1,0 +1,16 @@
+{
+  "name": "NadjlaLabri/CalendarBundle",
+  "description": "Symfony bundle integrating FullCalendar.js for managing events, tasks, and appointments with drag-and-drop and CRUD support.",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "VotreNamespace\\MonBundle\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "symfony/framework-bundle": "^5.4"
+  },
+  "keywords": ["calendar", "symfony", "events", "tasks", "fullcalendar", "scheduler"]
+}

@@ -1,0 +1,18 @@
+calendar_bundle:
+  path: /calendar
+  controller: App\CalendarBundle\Controller\CalendarController::index
+
+app_add_event:
+  path: /addEvent
+  controller: App\CalendarBundle\Controller\EventController::addEvent
+  methods: [POST]
+
+app_events_delete:
+  path: /DeleteEvent
+  controller: App\CalendarBundle\Controller\EventController::deleteEvent
+  methods: [POST]
+
+app_events_update:
+  path: /UpdateEvent
+  controller: App\CalendarBundle\Controller\EventController::UpdateEvent
+  methods: [POST]
