@@ -1,5 +1,5 @@
 {
-  "name": "labrin/calendar-bundle",
+  "name": "najoukou8/calendar-bundle",
   "description": "Symfony bundle integrating FullCalendar.js for managing events, tasks, and appointments with drag-and-drop and CRUD support.",
   "type": "symfony-bundle",
   "license": "MIT",
@@ -12,5 +12,12 @@
     "php": ">=7.2",
     "symfony/framework-bundle": "^5.4"
   },
-  "keywords": ["calendar", "symfony", "events", "tasks", "fullcalendar", "scheduler"]
+  "keywords": ["calendar", "symfony", "events", "tasks", "fullcalendar", "scheduler"],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/najoukou8/labrin-calendar-bundle"
+    }
+  ]
+
 }
