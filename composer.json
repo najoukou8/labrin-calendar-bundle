@@ -1,5 +1,5 @@
 {
-  "name": "najoukou8/calendar-bundle",
+  "name": "labrin/calendar-bundle",
   "description": "Symfony bundle integrating FullCalendar.js for managing events, tasks, and appointments with drag-and-drop and CRUD support.",
   "type": "symfony-bundle",
   "license": "MIT",
