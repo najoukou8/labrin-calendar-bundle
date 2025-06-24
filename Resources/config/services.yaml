@@ -5,5 +5,5 @@ services:
     public: false
 
   Labrin\CalendarBundle\:
-    resource: '../../../src/Controller'
+    resource: '../../src/Controller/*'
     tags: ['controller.service_arguments']
