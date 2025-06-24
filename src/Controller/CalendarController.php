@@ -16,7 +16,7 @@ class CalendarController extends AbstractController
     /**
      * @Route("/calendar/{user}", name="app_calendar")
      */
-    public function index(Request $request,EventsRepository $eventsRepository): Response
+    public function index(string $user,Request $request,EventsRepository $eventsRepository): Response
     {
 
         $eventsArray=[];
