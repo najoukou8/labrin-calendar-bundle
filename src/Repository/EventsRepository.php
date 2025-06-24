@@ -3,9 +3,9 @@
 namespace Labrin\CalendarBundle\Repository;
 
 
-use App\CalendarBundle\Entity\Events;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Labrin\CalendarBundle\Entity\Events;
 
 /**
  * @extends ServiceEntityRepository<Events>
