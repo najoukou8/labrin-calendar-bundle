@@ -1,6 +1,6 @@
 <?php
 
-namespace App\CalendarBundle\Entity;
+namespace Labrin\CalendarBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;

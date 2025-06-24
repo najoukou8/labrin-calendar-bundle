@@ -1,6 +1,6 @@
 <?php
 
-namespace App\CalendarBundle\Controller;
+namespace Labrin\CalendarBundle\Controller;
 
 
 use App\CalendarBundle\Repository\EventsRepository;
