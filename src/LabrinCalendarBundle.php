@@ -1,6 +1,6 @@
 <?php
 
-namespace Labrin\CalendarBundle\src;
+namespace Labrin\CalendarBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
