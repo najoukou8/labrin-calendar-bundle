@@ -22,7 +22,7 @@ class CalendarController extends AbstractController
         $eventsArray=[];
         $user=$request->attributes->get('user');
         if (empty($user)) {
-            return new JsonResponse(['success' => false, 'error' => 'User not found'], 400);
+            return new JsonResponse(['success' => false, 'error' => 'User not found', 'user'=>$user], 400);
         }
         $session = $request->getSession();
         $session->set('user', $user);
