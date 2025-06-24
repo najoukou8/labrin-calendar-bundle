@@ -3,9 +3,10 @@
 namespace Labrin\CalendarBundle\Controller;
 
 
-use App\CalendarBundle\Entity\Events;
-use App\CalendarBundle\Repository\EventsRepository;
+
 use Doctrine\ORM\EntityManagerInterface;
+use Labrin\CalendarBundle\Entity\Events;
+use Labrin\CalendarBundle\Repository\EventsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;

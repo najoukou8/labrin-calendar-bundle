@@ -3,9 +3,9 @@
 namespace Labrin\CalendarBundle\Controller;
 
 
-use App\CalendarBundle\Repository\EventsRepository;
 
 use iio\libmergepdf\Exception;
+use Labrin\CalendarBundle\Repository\EventsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
