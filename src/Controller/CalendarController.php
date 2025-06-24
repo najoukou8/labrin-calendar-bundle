@@ -14,13 +14,13 @@ use Symfony\Component\HttpFoundation\Response;
 class CalendarController extends AbstractController
 {
     /**
-     * @Route("/calendar/{user}", name="app_calendar")
+     * @Route("/calendar", name="app_calendar")
      */
-    public function index(string $user,Request $request,EventsRepository $eventsRepository): Response
+    public function index(Request $request,EventsRepository $eventsRepository): Response
     {
 
         $eventsArray=[];
-       
+        $user = $request->query->get('user');
         if (empty($user)) {
             return new JsonResponse(['success' => false, 'error' => 'User not found', 'user'=>$user], 400);
         }
