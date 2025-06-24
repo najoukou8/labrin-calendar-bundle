@@ -4,6 +4,6 @@ services:
     autoconfigure: true
     public: false
 
-  Labrin\CalendarBundle\:
+Labrin\CalendarBundle\Controller\:
     resource: '../../src/Controller/*'
     tags: ['controller.service_arguments']
