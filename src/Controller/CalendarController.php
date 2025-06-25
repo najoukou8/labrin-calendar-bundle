@@ -64,7 +64,7 @@ class CalendarController extends AbstractController
                 'user'=>$event->getUser(),
             ];
         }
-        return $this->render('@Calendar/calendar/index.html.twig',[
+        return $this->render('@LabrinCalendar/calendar/index.html.twig',[
             'events' => json_encode($eventsArray),
             'draggableEvents' => $draggableEventsArray,
             'user' => $user,
