@@ -1,5 +1,5 @@
 calendar_bundle:
-  path: /calendar
+  path: /
   controller:  Labrin\CalendarBundle\Controller\CalendarController::index
 
 app_add_event:

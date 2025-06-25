@@ -3,7 +3,6 @@
 namespace Labrin\CalendarBundle\Controller;
 
 
-
 use iio\libmergepdf\Exception;
 use Labrin\CalendarBundle\Repository\EventsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,7 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 class CalendarController extends AbstractController
 {
     /**
-     * @Route("/calendar", name="app_calendar")
+     * @Route("/", name="app_calendar")
      */
     public function index(Request $request,EventsRepository $eventsRepository): Response
     {
@@ -26,7 +25,6 @@ class CalendarController extends AbstractController
         }
         $session = $request->getSession();
         $session->set('user', $user);
-        //$user="labrin";
 
         $eventsWithoutDates = $eventsRepository->findBy(["user"=>$user, "isTask"=>1]);
 
