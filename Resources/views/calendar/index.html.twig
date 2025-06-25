@@ -83,7 +83,6 @@
                                 end: endDate.toISOString(),
                                 isTask: 0,
                             };
-                            console.log(updateEvent);
 
                             fetchUpdates(updateEvent);
 
@@ -154,7 +153,6 @@
                     },
                     eventClick: function(arg) {
                         currentEvent = arg.event;
-                        console.log(currentEvent);
 
                         document.getElementById('popup-title').value = arg.event.title;
                         document.getElementById('popup-start').value = formatDateForInput(arg.event.start);
@@ -209,7 +207,6 @@
                 addedEvent.addEventListener('click', function (){
                     const  eventtitle= eventTitleInput.value.trim();
                     const userId = document.getElementById('add-container').dataset.user;
-                    console.log(userId);
 
                     if (eventtitle) {
                         const  NewEvent = {
@@ -245,7 +242,6 @@
                     if (!currentEvent) return;
 
                     var eventId = currentEvent.id;
-                    console.log(eventId);
                     if (!eventId) {
                         console.error('Event ID is not defined.');
                         return;
