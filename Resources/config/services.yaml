@@ -7,5 +7,11 @@ services:
   Labrin\CalendarBundle\Controller\:
     resource: '../../src/Controller/*'
     tags: ['controller.service_arguments']
+
   Labrin\CalendarBundle\Repository\:
     resource: '../../src/Repository/*'
+
+  Labrin\CalendarBundle\Service\:
+    resource: '../../src/Service/*'
+    autowire: true
+    autoconfigure: true
