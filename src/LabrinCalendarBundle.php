@@ -25,6 +25,9 @@ class LabrinCalendarBundle extends Bundle  implements PrependExtensionInterface
     }
     public function configureRoutes(RoutingConfigurator $routes): void
     {
+        dump(__DIR__.'/Resources/config/routes.yaml');
+        dump(__DIR__.'/../Resources/config/routes.yaml');
+
         $routes->import(__DIR__.'/../Resources/config/routes.yaml')
             ->prefix('/calendar');
     }
