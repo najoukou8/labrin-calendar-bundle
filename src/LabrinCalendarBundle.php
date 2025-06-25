@@ -15,8 +15,7 @@ class LabrinCalendarBundle extends Bundle  implements PrependExtensionInterface
     }
     public function prepend(ContainerBuilder $container)
     {
-        var_dump('prepend called');
-        var_dump(  __DIR__ . '/../Resources/views');
+        file_put_contents('/tmp/my-debug.log', "prepend called\n", FILE_APPEND);
 
         // Add Twig namespace mapping automatically
         $container->prependExtensionConfig('twig', [
