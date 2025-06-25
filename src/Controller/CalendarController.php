@@ -17,8 +17,6 @@ class CalendarController extends AbstractController
      */
     public function index(Request $request,EventsRepository $eventsRepository): Response
     {
-        var_dump(__DIR__.'/Resources/config/routes.yaml');
-        var_dump(__DIR__.'/../../Resources/config/routes.yaml');
         $eventsArray=[];
         $user = $request->query->get('user');
         if (empty($user)) {
