@@ -5,7 +5,6 @@ namespace Labrin\CalendarBundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 
 class LabrinCalendarBundle extends Bundle  implements PrependExtensionInterface
@@ -16,6 +15,9 @@ class LabrinCalendarBundle extends Bundle  implements PrependExtensionInterface
     }
     public function prepend(ContainerBuilder $container)
     {
+        var_dump('prepend called');
+        var_dump(  __DIR__ . '/../Resources/views');
+
         // Add Twig namespace mapping automatically
         $container->prependExtensionConfig('twig', [
             'paths' => [
@@ -23,10 +25,5 @@ class LabrinCalendarBundle extends Bundle  implements PrependExtensionInterface
             ],
         ]);
     }
-    public function configureRoutes(RoutingConfigurator $routes): void
-    {
-        var_dump(__DIR__.'/../Resources/config/routes.yaml');
-        $routes->import(__DIR__.'/../Resources/config/routes.yaml')
-            ->prefix('/calendar');
-    }
+
 }
