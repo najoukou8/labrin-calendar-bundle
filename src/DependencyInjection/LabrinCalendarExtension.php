@@ -17,13 +17,7 @@ class LabrinCalendarExtension extends Extension
             new FileLocator(__DIR__.'/../../Resources/config')
         );
         $loader->load('services.yaml');
-
-        // Process configuration if you have bundle configuration
-        $configuration = new Configuration();
-        $config = $this->processConfiguration($configuration, $configs);
-
-        // You can set parameters based on config here if needed
-        // $container->setParameter('labrin_calendar.some_param', $config['some_param']);
+        
     }
 
     public function getAlias(): string
