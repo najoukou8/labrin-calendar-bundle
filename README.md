@@ -9,7 +9,7 @@ A Symfony bundle that provides a full-featured calendar interface and event mana
 1. **Install the bundle via Composer** :
 
 ```bash
-composer require labrin/calendar-bundle:@dev
+composer require labrin/calendar-bundle:dev-main
 ```
 2. **Register the routes** 
  
